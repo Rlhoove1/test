@@ -5,7 +5,15 @@ nav_order: 1
 description: "hosted on GitHub Pages."
 permalink: /
 ---
-Single-cell transcriptomics has unveiled a vast landscape of cellular heterogeneity in which the cell cycle is a significant component. We trained a high-resolution cell cycle classifier (ccAFv2) using single cell RNA-seq (scRNA-seq) characterized human neural stem cells. The ccAFv2 classifies six cell cycle states (G1, Late G1, S, S/G2, G2/M, and M/Early G1) and a quiescent-like G0 state (qG0), and it incorporates a tunable parameter to filter out less certain classifications. The ccAFv2 classifier performed better than or equivalent to other state-of-the-art methods even while classifying more cell cycle states, including G0. We demonstrate that the ccAFv2 classifier is generalizable across cell types and all three germ layers by applying it to developing fetal cells. We showcased the versatility of ccAFv2 by successfully applying it to classify cells, nuclei, and spatial transcriptomics data in humans and mice, using various normalization methods and gene identifiers. We provide methods to regress the cell cycle expression patterns out of single cell or nuclei data to uncover underlying biological signals. The classifier can be used either as an R package integrated with Seurat or a PyPI package integrated with scanpy. We proved that ccAFv2 has enhanced accuracy, flexibility, and adaptability across various experimental conditions, establishing ccAFv2 as a powerful tool for dissecting complex biological systems, unraveling cellular heterogeneity, and deciphering the molecular mechanisms by which proliferation and quiescence affect cellular processes.
+#About ccAFv2
+*ccAFv2* is a high-resolution classifier for cell cycle state identification in single-cell RNA-seq (scRNA-seq) data. It was trained on human neural stem cells and classifies six distinct cell cycle states (G1, Late G1, S, S/G2, G2/M, and M/Early G1) along with a quiescent-like G0 state (qG0). ccAFv2 incorporates a tunable parameter to refine classification certainty and outperforms other state-of-the-art methods while supporting additional cell cycle states, including G0.
+
+Key Applications of ccAFv2:
+- Identify fine-grained cell cycle states in diverse cell types and germ layers.
+- Classify cells, nuclei, and spatial transcriptomics data across species.
+- Apply to various normalization methods and gene identifiers.
+- Regress cell cycle expression patterns to reveal biological signals.
+- Use as an R package (Seurat integration) or PyPI package (scanpy integration).
 
 ----
 
